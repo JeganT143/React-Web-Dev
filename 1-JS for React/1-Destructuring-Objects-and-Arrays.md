@@ -54,12 +54,10 @@ console.log(others); // ["History", "Art", "Physical Education"]
 - Set fallback values if array doesn't have enough elements
 
 ```javascript
-const subjects = ["Math", "Science", "History", "Art", "Physical Education"];
-const [primary, secondary, ...others] = subjects;
-
-console.log(primary); // Math
-console.log(secondary); // Science
-console.log(others); // ["History", "Art", "Physical Education"]
+const [a, b, c = "default value"] = [10, 20];
+console.log(a); // 10
+console.log(b); // 20
+console.log(c); // "default value"
 ```
 
 ## Object Destructuring
@@ -139,3 +137,4 @@ const { productId, ...details } = product;
 console.log(productId); // 1
 console.log(details); // { name: "Laptop", price: 999, color: "Silver" }
 ```
+
